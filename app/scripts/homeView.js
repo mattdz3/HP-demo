@@ -1,15 +1,15 @@
 "use strict"; 
 
-var HomeView = parse.View.extend({
+var HomeView = Parse.View.extend({
 	
 	template: _.template($('.home-temp').text()),
 
 	events: {
-
+		"click .patient-button" : "displayLogin",
 	},
 
 	initialize: function() {
-		$('.home-container').append(this.el)
+		$('.home-view').append(this.el)
 		this.render();
 	},
 
@@ -18,4 +18,12 @@ var HomeView = parse.View.extend({
 		this.$el.html(renderTemp);
 		return this;
 	},
+
+	displayLogin: function() {
+		$('.login-view').html('');
+		$('.main').hide();
+		$('.button-row').hide();
+		new LoginView();
+	},
 })
+

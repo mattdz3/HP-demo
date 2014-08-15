@@ -12,8 +12,3 @@ var ViewColl = Parse.Collection.extend({
 	model: View
 });
 
-$('.patient-button').click(function() {
-	$('.main').hide();
-	$('.button-row').hide();
-	new loginView();
-});

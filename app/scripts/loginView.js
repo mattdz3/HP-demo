@@ -2,14 +2,14 @@
 
 var LoginView = Parse.View.extend({
 
-	template: _.template($('login-temp').text()),
+	template: _.template($('.login-temp').text()),
 
 	events: {
 		"click .login-button" : "login",
 	},
 
 	initialize: function() {
-		$('.login-container').append(this.el)
+		$('.login-view').append(this.el)
 		this.render();
 	},
 
