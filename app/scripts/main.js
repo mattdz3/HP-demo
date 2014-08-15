@@ -6,7 +6,14 @@ Parse.initialize("HSYcfLCkOCucC0sVDztsyZgKGOwX22jvlfNQJsWZ", "Nak1IiZvGSUHhDzqf2
 
 var View = Parse.Object.extend('view');
 
+//collection 
+
 var ViewColl = Parse.Collection.extend({
 	model: View
 });
 
+$('.patient-button').click(function() {
+	$('.main').hide();
+	$('.button-row').hide();
+	new loginView();
+});
