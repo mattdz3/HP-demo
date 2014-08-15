@@ -1,11 +1,15 @@
-"use strict";
+"use strict"; 
 
-var LoginView = Parse.View.extend({
+var BeforeVisitView = Parse.View.extend({
+	
+	template: _.template($('.before-temp').text()),
 
-	template: _.template($('.login-temp').text()),
+	events: {
+
+	},
 
 	initialize: function() {
-		$('.login-view').append(this.el)
+		$('.features').append(this.el)
 		this.render();
 	},
 

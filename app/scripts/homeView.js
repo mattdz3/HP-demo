@@ -5,8 +5,10 @@ var HomeView = Parse.View.extend({
 	template: _.template($('.home-temp').text()),
 
 	events: {
-		"click .patient-button" : "displayLogin",
-	},
+		"click .patient-button"  : "patientLogin",
+		"click .provider-button" : "providerLogin",
+		"click .before-visit"    : "beforeView",
+ 	},
 
 	initialize: function() {
 		$('.home-view').append(this.el)
@@ -19,11 +21,25 @@ var HomeView = Parse.View.extend({
 		return this;
 	},
 
-	displayLogin: function() {
+	patientLogin: function() {
 		$('.login-view').html('');
 		$('.main').hide();
 		$('.button-row').hide();
 		new LoginView();
 	},
+
+	providerLogin: function() {
+		$('.login-view').html('');
+		$('.main').hide();
+		$('.button-row').hide();
+		new ProviderLoginView();
+	},
+
+	beforeView: function() {
+		$('.features').html('');
+		$('.main').hide();
+		$('.button-row').hide();
+		new BeforeVisitView();
+	}
 })
 

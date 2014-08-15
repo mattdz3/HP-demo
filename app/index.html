@@ -26,19 +26,33 @@
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        HealthPlotter
+        <a href="#home">HealthPlotter</a>
         <ul>
-          <li> <button class="btn btn-default btn-sm">Features</button> </li>
-          <li><button class="btn btn-default btn-sm">About</button></li>
-          <li><button class="btn btn-default btn-sm">Contact</button></li>
-          <li> <a href="#login"> <button class="btn btn-default btn-sm patient-button">Patient Login</button></a></li>
-          <li><button class="btn btn-default btn-sm">Provider Login</button></li>
-        </ul>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Features
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#before" class="before-visit">Before the visit</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">During the visit</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">The rest of your day</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Communication</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Support</a></li>
+            </ul>
+
+            <li><button class="btn btn-default btn-sm">About</button></li>
+            <li><button class="btn btn-default btn-sm">Contact</button></li>
+            <li> <a href="#patientlogin"> <button class="btn btn-default btn-sm patient-button">Patient Login</button></a></li>
+            <li> <a href="#providerlogin"> <button class="btn btn-default btn-sm provider-button">Provider Login</button></a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <div class="login-view"></div>
     <div class="home-view"></div>
+    <div class="features"></div>
 
     <script type="text/template" class="home-temp">
       <div class="main">
@@ -117,9 +131,37 @@
         <input placeholder="Email"></input>
         <input placeholder="password"></input>
         <button> Login </button>
-      </div>
+        <button> Sign Up </button>
+        <button> Provider Login </button>  
+      </div> 
     </script>
 
+    <script type="text/template" class="provider-login-temp">
+      <div class="login-container">
+        Provider Login
+        <input placeholder="Email"></input>
+        <input placeholder="password"></input>
+        <button> Login </button>
+        <button> Sign Up </button>
+        <button> Patient Login </button>  
+      </div> 
+    </script>
+
+    <script type="text/template" class="before-temp">
+      <div class="before-the-visit">
+        Before The Visit
+        <p>Before you step into the exam room, ElationEMR’s intuitive design quickly prepares you for a thorough and efficient visit.</p>
+        <div class="organized">Stay organized.
+          <p>Our intuitive chart layout helps you stay organized and find information quickly. Keep the notes from the previous visit in full view during your present visit. Quickly scroll through the straightforward Chronological Record, or skip to any part. Search almost anything in the chart.</p>
+        </div>
+        <img src="https://www.elationemr.com/static/images/two_pane_big.png">
+        <div class="anticipate">
+          Let Elation anticipate your thinking.
+          <p>At the click of a button, ElationEMR will automatically gather relevant lab values, organize them by problem, and put them in your Visit Note. And with its structured free text, the Visit Note lets you take notes and think the way you need to.</p>
+          <img src="https://www.elationemr.com/static/images/reference_labs_problems.png">
+        </div>  
+      </div>
+    </script>
     
 
 
@@ -160,8 +202,10 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"> </script>
         <script src="scripts/homeView.js"> </script>
+        <script src="scripts/beforeVisit.js"> </script>
         <script src="scripts/router.js"> </script>
         <script src="scripts/loginView.js"> </script>
+        <script src="scripts/providerLogin.js"> </script>
         <!-- endbuild -->
 </body>
 </html>

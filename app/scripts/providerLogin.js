@@ -1,8 +1,8 @@
 "use strict";
 
-var LoginView = Parse.View.extend({
+var ProviderLoginView = Parse.View.extend({
 
-	template: _.template($('.login-temp').text()),
+	template: _.template($('.provider-login-temp').text()),
 
 	initialize: function() {
 		$('.login-view').append(this.el)
@@ -14,4 +14,5 @@ var LoginView = Parse.View.extend({
 		this.$el.html(renderTemp);
 		return this;
 	},
+
 })

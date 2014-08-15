@@ -3,14 +3,16 @@
 var AppRouter = Parse.Router.extend({
 
 	routes: {
-		""       : "home",
-		"home"   : "home",
-		"login"  : "login",
-		"signUp" : "signUp",
+		""              : "home",
+		"home"          : "home",
+		"patientlogin"  : "patientlogin",
+		"providerlogin" : "providerlogin",
+		"before"        : "before", 
+		"signUp"        : "signUp",
 	},
 
 	initialize: function(options) {
-	
+		this.currentView = null;
 	},
 
 	home: function() {
@@ -18,8 +20,18 @@ var AppRouter = Parse.Router.extend({
 		this.swap(view);
 	},
 
-	login: function() {
+	patientlogin: function() {
 		var view = new LoginView();
+		this.swap(view);
+	},
+
+	providerlogin: function() {
+		var view = new ProviderLoginView();
+		this.swap(view);
+	},
+
+	before: function() {
+		var view = new BeforeVisitView();
 		this.swap(view);
 	},
 
