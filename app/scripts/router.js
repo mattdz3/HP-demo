@@ -8,7 +8,10 @@ var AppRouter = Parse.Router.extend({
 		"patientlogin"  : "patientlogin",
 		"providerlogin" : "providerlogin",
 		"before"        : "before", 
-		"signUp"        : "signUp",
+		"during"        : "during",
+		"yourDay"       : "yourDay",
+		"comm"          : "comm",
+		"support"       : "support",
 	},
 
 	initialize: function(options) {
@@ -32,6 +35,26 @@ var AppRouter = Parse.Router.extend({
 
 	before: function() {
 		var view = new BeforeVisitView();
+		this.swap(view);
+	},
+
+	during: function() {
+		var view = new DuringVisitView();
+		this.swap(view);
+	},
+
+	yourDay: function() {
+		var view = new DayView();
+		this.swap(view);
+	},
+
+	comm: function() {
+		var view = new CommunicationView();
+		this.swap(view);
+	},
+
+	support: function() {
+		var view = new SupportView();
 		this.swap(view);
 	},
 

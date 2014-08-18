@@ -18,6 +18,10 @@ li {
   box-shadow: 0px 0px 10px;
 }
 
+.dropdown {
+  margin-top: 0;
+}
+
 nav {
   height: 60px;
 
@@ -196,17 +200,158 @@ nav {
   }
 }
 
+
+.nav-header {
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .before-the-visit {
-  width: 90%;
+  width: 60%;
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
   text-align: center;
 
+  .before-visit {
+    font-size: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(160, 154, 154);
+  }
+
+  .organized {
+    margin-top: 80px;
+  }
+
   p {
     font-size: 16px;
+    margin-top: 30px; 
+  }
+
+  img {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
+.during-visit {
+  width: 60%;
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 
+  h2 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(160, 154, 154); 
+  }
+
+  h3 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h4 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}
+
+.your-day {
+  width: 60%;
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  h2 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(160, 154, 154); 
+  }
+
+  h3 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h4 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h5 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}
+
+.communication {
+  width: 60%;
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  h2 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(160, 154, 154); 
+  }
+
+  h3 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h4 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h5 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  h6 {
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .img-zero {
+    margin-top: 0;
+  }
+
+  img {
+    margin-top: 80px;
+  }
+}

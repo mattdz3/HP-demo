@@ -1,11 +1,11 @@
-"use strict"; 
+"use strict";
 
-var HomeView = Parse.View.extend({
+var DuringVisitView = Parse.View.extend({
 	
-	template: _.template($('.home-temp').text()),
+	template: _.template($('.during-temp').text()),
 
 	initialize: function() {
-		$('.home-view').append(this.el)
+		$('.features').append(this.el)
 		this.render();
 	},
 
@@ -13,6 +13,5 @@ var HomeView = Parse.View.extend({
 		var renderTemp = this.template(this.model)
 		this.$el.html(renderTemp);
 		return this;
-	},
+	},	
 })
-

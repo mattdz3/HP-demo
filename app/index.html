@@ -35,9 +35,9 @@
             </button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#before" class="before-visit">Before the visit</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">During the visit</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">The rest of your day</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Communication</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#during">During the visit</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#yourDay">The rest of your day</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#comm">Communication</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Support</a></li>
             </ul>
 
@@ -53,6 +53,42 @@
     <div class="login-view"></div>
     <div class="home-view"></div>
     <div class="features"></div>
+
+    <div class="footer">
+      <div class="footer-about">
+        <ul> About HealthPlotter
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Hear it from Our Doctors</li>
+          <li>Partners</li>
+          <li>Privacy Policy</li>
+          <li>Payment Policy</li>
+        </ul>
+      </div>
+
+      <div class="footer-company">
+        <ul> Our Company
+          <li>Blog</li>
+          <li>Team</li>
+          <li>Philosophy</li>
+          <li>Jobs</li>
+          <li>Reach Us</li>
+        </ul>
+      </div>
+
+      <div class="news-mail">
+        <p>Sign Up for our News Letter</p>
+        <input placeholder="enter your email...">
+        <button>SIGN UP</button>
+      </div>
+
+      <div class="sub-foot">
+        <img src="https://www.elationemr.com/static/images/2014_ehr_ambulatory.png">
+        <p>HealthPlotter is Meaningful Use 2014 Certified</p>
+      </div>
+    </div>
+
+    <!-- scripts -->
 
     <script type="text/template" class="home-temp">
       <div class="main">
@@ -89,42 +125,6 @@
       </div>
     </script>
 
-    <div class="footer">
-      <div class="footer-about">
-        <ul> About HealthPlotter
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Hear it from Our Doctors</li>
-          <li>Partners</li>
-          <li>Privacy Policy</li>
-          <li>Payment Policy</li>
-        </ul>
-      </div>
-
-      <div class="footer-company">
-        <ul> Our Company
-          <li>Blog</li>
-          <li>Team</li>
-          <li>Philosophy</li>
-          <li>Jobs</li>
-          <li>Reach Us</li>
-        </ul>
-      </div>
-
-      <div class="news-mail">
-        <p>Sign Up for our News Letter</p>
-        <input placeholder="enter your email...">
-        <button>SIGN UP</button>
-      </div>
-
-      <div class="sub-foot">
-        <img src="https://www.elationemr.com/static/images/2014_ehr_ambulatory.png">
-        <p>HealthPlotter is Meaningful Use 2014 Certified</p>
-      </div>
-    </div>
-
-
-
     <script type="text/template" class="login-temp">
       <div class="login-container">
         Patient Login
@@ -148,9 +148,21 @@
     </script>
 
     <script type="text/template" class="before-temp">
+     
       <div class="before-the-visit">
-        Before The Visit
-        <p>Before you step into the exam room, ElationEMR’s intuitive design quickly prepares you for a thorough and efficient visit.</p>
+        <div class="nav-header btn-group">
+          <button type="button" class="btn btn-default">Before the Visit</button>
+          <button type="button" class="btn btn-default">During the Visit</button>
+          <button type="button" class="btn btn-default">Your Day</button>
+          <button type="button" class="btn btn-default">Communication</button>
+          <button type="button" class="btn btn-default">Support</button>
+          <button type="button" class="btn btn-default">Features</button>
+        </div>
+
+        <div class="before-visit">
+          Before The Visit
+          <p>Before you step into the exam room, ElationEMR’s intuitive design quickly prepares you for a thorough and efficient visit.</p>
+          </div>
         <div class="organized">Stay organized.
           <p>Our intuitive chart layout helps you stay organized and find information quickly. Keep the notes from the previous visit in full view during your present visit. Quickly scroll through the straightforward Chronological Record, or skip to any part. Search almost anything in the chart.</p>
         </div>
@@ -162,7 +174,107 @@
         </div>  
       </div>
     </script>
-    
+
+    <script type="text/template" class="during-temp">
+      <div class="during-visit">
+
+      <div class="nav-header btn-group">
+          <button type="button" class="btn btn-default">Before the Visit</button>
+          <button type="button" class="btn btn-default">During the Visit</button>
+          <button type="button" class="btn btn-default">Your Day</button>
+          <button type="button" class="btn btn-default">Communication</button>
+          <button type="button" class="btn btn-default">Support</button>
+          <button type="button" class="btn btn-default">Features</button>
+        </div>
+
+        <h1>During the Visit</h1>
+        <h2>So you can focus on your patient, ElationEMR’s design gives you what you need -- and gets out of the way.</h2>
+
+        <h3>Quickly find information to support your decisions.</h3>
+        <p>ElationEMR’s comprehensive search smartly trends relevant data, like vitals or cholesterol values, whenever you need it.</p>
+
+        <img src="https://www.elationemr.com/static/images/magic_table.png">
+
+        <h4>Take action easily, in whatever way you want.</h4>
+        <p>Start, finish, send, and print orders in whatever sequence you need. Quickly write prescriptions by automatically refilling existing scripts, and easily reference your patient’s insurance formularies. Instantly prescribe to any pharmacy in the U.S. By letting you take powerful actions efficiently, ElationEMR helps you stay on time and on track.</p>
+      </div>
+    </script>
+
+    <script type="text/template" class="day-temp">
+      <div class="your-day">
+        <div class="nav-header btn-group">
+            <button type="button" class="btn btn-default">Before the Visit</button>
+            <button type="button" class="btn btn-default">During the Visit</button>
+            <button type="button" class="btn btn-default">Your Day</button>
+            <button type="button" class="btn btn-default">Communication</button>
+            <button type="button" class="btn btn-default">Support</button>
+            <button type="button" class="btn btn-default">Features</button>
+          </div>
+
+          <h1>The Rest of Your Day</h1>
+          <h2>We know your extraordinary care extends far beyond the visit. Elation makes it easier and more efficient.</h2>
+
+          <h3>Never miss anything.</h3>
+          <p>All outstanding actions across your patients from the day are summarized in a single queue in the Practice Homepage. Easily file, respond and sign off on incoming messages, reports, and refill requests right there, or launch unfinished patient charts in new tabs in your browser.</p>
+
+          <img src="https://www.elationemr.com/static/images/reports_home.png">
+
+          <h4>Receive faxes inside ElationEMR.</h4>
+          <p>ElationEMR hooks up to your fax line, so your staff can handle incoming documents with ease.</p>
+
+          <img src="https://www.elationemr.com/static/images/fax_queue.png">
+
+          <h5>Understand and improve your practice.</h5>
+          <p>ElationEMR lets you begin tracking practice performance, clinical quality measures, and meaningful use criteria measures. Get as detailed as you like: tag your patients with labels you define, or even track the time you spend seeing patients or documenting.</p>
+
+          <img src="https://www.elationemr.com/static/images/practice_performance.png">
+      </div>
+    </script>
+
+    <script type="text/template" class="comm-temp">
+      <div class="communication">
+        <div class="nav-header btn-group">
+              <button type="button" class="btn btn-default">Before the Visit</button>
+              <button type="button" class="btn btn-default">During the Visit</button>
+              <button type="button" class="btn btn-default">Your Day</button>
+              <button type="button" class="btn btn-default">Communication</button>
+              <button type="button" class="btn btn-default">Support</button>
+              <button type="button" class="btn btn-default">Features</button>
+            </div>
+
+            <h1>Communication</h1>
+            <h2>Extend your care beyond your office through seamless, secure sharing of pertinent clinical data with your patients and colleagues.</h2>
+
+            <h3>Always know who's caring for your patient.</h3>
+            <p>The Elation Provider Network automatically reveals the network of physicians that have seen your patient. No more relying on memory, a patient’s recollection, or a specialist’s general reputation to trigger a referral.</p>
+
+            <img src="https://www.elationemr.com/static/images/epn_pts_providers.png">
+
+            <h4>Communicate with confidence.</h4>
+            <p>Elation not only verifies the contact information of providers in your network, but also clearly indicates the available methods for sending them communications from ElationEMR.</p>
+
+            <img src="https://www.elationemr.com/static/images/epn_card_sample_a.png">
+            <img src="https://www.elationemr.com/static/images/epn_card_sample_b.png" class="img-zero">
+            <img src="https://www.elationemr.com/static/images/epn_card_sample_c.png" class="img-zero">
+
+            <h5>Find a provider, send a letter in one click.</h5>
+            <p>The Elation Provider Network was built to save you time. Search for a provider and with one click, start a referral or a letter.</p>
+
+            <img src="https://www.elationemr.com/static/images/epn_quick_letter.png">
+
+            <h6>Send letters and documents with ease.</h6>
+            <p>Send faxes and secure emails to your colleagues, even if they aren't on the Elation Platform, from within the EMR. Attach anything from the patient chart with the click of a button.</p>
+
+            <img src="https://www.elationemr.com/static/images/letters_ui.png">
+
+            <h6>Securely communicate with your patients online.</h6>
+            <p>Through ElationEMR’s online patient Passport, you can communicate directly with patients about their health. Share key clinical information, like lab results or selected visit notes, without ever leaving the Patient Chart. Patients also have automatic access to critical health information, such as allergies and medications, to share with other clinicians.</p>
+
+            <img src="https://www.elationemr.com/static/images/passport_communication.png">
+      </div>
+    </script>
+
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -203,6 +315,10 @@
         <script src="scripts/main.js"> </script>
         <script src="scripts/homeView.js"> </script>
         <script src="scripts/beforeVisit.js"> </script>
+        <script src="scripts/duringVisit.js"> </script>
+        <script src="scripts/dayView.js"> </script>
+        <script src="scripts/commView.js"> </script>
+        <script src="scripts/supportView.js"> </script>
         <script src="scripts/router.js"> </script>
         <script src="scripts/loginView.js"> </script>
         <script src="scripts/providerLogin.js"> </script>
