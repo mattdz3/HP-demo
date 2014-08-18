@@ -12,6 +12,8 @@ var AppRouter = Parse.Router.extend({
 		"yourDay"       : "yourDay",
 		"comm"          : "comm",
 		"support"       : "support",
+		"about"         : "about",
+		"payment"       : "payment", 
 	},
 
 	initialize: function(options) {
@@ -55,6 +57,16 @@ var AppRouter = Parse.Router.extend({
 
 	support: function() {
 		var view = new SupportView();
+		this.swap(view);
+	},
+
+	about: function() {
+		var view = new AboutView();
+		this.swap(view);
+	},
+
+	payment: function() {
+		var view = new PayView();
 		this.swap(view);
 	},
 
